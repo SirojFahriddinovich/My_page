@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ProximaNova-Regular.ttf">
+            <string>ProximaNova-Regular</string>
+        </array>
+        <array key="ProximaNova-Semibold.ttf">
+            <string>ProximaNova-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CellTypeCVC" customModule="Examen_Last" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="235" height="173"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="235" height="173"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XxD-UJ-7W0">
+                        <rect key="frame" x="5" y="5" width="225" height="163"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Uz6-lN-7qu">
+                                <rect key="frame" x="14" y="18.5" width="28" height="27"/>
+                                <color key="tintColor" name="TintColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="fdb-OA-dWD"/>
+                                    <constraint firstAttribute="width" constant="28" id="fdp-D5-nCt"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="i4y-UY-WJx">
+                                <rect key="frame" x="12" y="64" width="197" height="94"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Разместить объявление" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qjj-Ng-bZ0">
+                                        <rect key="frame" x="0.0" y="0.0" width="197" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Продать или сдать" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o01-u3-MjA">
+                                        <rect key="frame" x="0.0" y="35.5" width="197" height="58.5"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="12"/>
+                                        <color key="textColor" name="TextGray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="i4y-UY-WJx" secondAttribute="trailing" constant="16" id="Ba8-ps-uJu"/>
+                            <constraint firstItem="Uz6-lN-7qu" firstAttribute="leading" secondItem="XxD-UJ-7W0" secondAttribute="leading" constant="14" id="CsI-nO-LcU"/>
+                            <constraint firstAttribute="bottom" secondItem="i4y-UY-WJx" secondAttribute="bottom" constant="5" id="D9V-Cy-Ak0"/>
+                            <constraint firstItem="Uz6-lN-7qu" firstAttribute="top" secondItem="XxD-UJ-7W0" secondAttribute="top" constant="18" id="w5p-jM-idO"/>
+                            <constraint firstItem="i4y-UY-WJx" firstAttribute="leading" secondItem="XxD-UJ-7W0" secondAttribute="leading" constant="12" id="yve-F3-wZ7"/>
+                            <constraint firstItem="i4y-UY-WJx" firstAttribute="top" secondItem="Uz6-lN-7qu" secondAttribute="bottom" constant="18" id="zrP-Hv-kc5"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="XxD-UJ-7W0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="AlO-xL-vB0"/>
+                <constraint firstAttribute="trailing" secondItem="XxD-UJ-7W0" secondAttribute="trailing" constant="5" id="Pcg-UI-vNa"/>
+                <constraint firstItem="XxD-UJ-7W0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="WKo-xs-UgS"/>
+                <constraint firstAttribute="bottom" secondItem="XxD-UJ-7W0" secondAttribute="bottom" constant="5" id="bJm-mm-WNL"/>
+            </constraints>
+            <size key="customSize" width="235" height="173"/>
+            <connections>
+                <outlet property="containerView" destination="XxD-UJ-7W0" id="Khr-B9-2Un"/>
+                <outlet property="imgView" destination="Uz6-lN-7qu" id="qEP-Jq-hhq"/>
+                <outlet property="seoLbl" destination="o01-u3-MjA" id="cr8-5O-BoJ"/>
+                <outlet property="titleLbl" destination="qjj-Ng-bZ0" id="THC-mK-5U3"/>
+            </connections>
+            <point key="canvasLocation" x="271.73913043478262" y="151.00446428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="plus.circle" catalog="system" width="128" height="121"/>
+        <namedColor name="TextGray">
+            <color red="0.55299997329711914" green="0.59600001573562622" blue="0.61599999666213989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TintColor">
+            <color red="0.22699999809265137" green="0.50599998235702515" blue="0.42699998617172241" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
